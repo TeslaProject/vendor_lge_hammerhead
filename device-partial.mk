@@ -14,9 +14,9 @@
 
 # Broadcom blob(s) necessary for Hammerhead hardware
     PRODUCT_COPY_FILES += \
-    vendor/lge/hammerhead/vendor/bcm2079x-b5_firmware.ncd:system/vendor/firmware/bcm2079x-b5_firmware.ncd:broadcom \
-    vendor/lge/hammerhead/vendor/bcm2079x-b5_pre_firmware.ncd:system/vendor/firmware/bcm2079x-b5_pre_firmware.ncd:broadcom \
-    vendor/lge/hammerhead/vendor/bcm4335c0.hcd:system/vendor/firmware/bcm4335c0.hcd:broadcom \
+    vendor/lge/hammerhead/vendor/firmware/bcm2079x-b5_firmware.ncd:system/vendor/firmware/bcm2079x-b5_firmware.ncd:broadcom \
+    vendor/lge/hammerhead/vendor/firmware/bcm2079x-b5_pre_firmware.ncd:system/vendor/firmware/bcm2079x-b5_pre_firmware.ncd:broadcom \
+    vendor/lge/hammerhead/vendor/firmware/bcm4335c0.hcd:system/vendor/firmware/bcm4335c0.hcd:broadcom \
  
 # LGE blob(s) necessary for Hammerhead hardware
     PRODUCT_COPY_FILES += \
@@ -214,3 +214,20 @@
     vendor/lge/hammerhead/vendor/lib/libssd.so:system/vendor/lib/libssd.so:qcom \
     vendor/lge/hammerhead/etc/qmi_fw.conf:system/etc/qmi_fw.conf:qcom 
     
+    #Missing service items
+    PRODUCT_COPY_FILES += \
+    vendor/lge/hammerhead/framework/serviceitems.jar:system/framework/serviceitems.jar:qcom \
+    vendor/lge/hammerhead/etc/permissions/serviceitems.xml:system/etc/permissions/serviceitems.xml:qcom \
+    
+    #Missing conf
+    PRODUCT_COPY_FILES += \
+    vendor/lge/hammerhead/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg:qcom \
+    vendor/lge/hammerhead/etc/flp.conf:system/etc/flp.conf:qcom 
+    
+    #Missing discretix stuff 
+    PRODUCT_COPY_FILES += \
+    vendor/lge/hammerhead/vendor/firmware/discretix/dxhdcp2.b00:system/vendor/firmware/discretix/dxhdcp2.b00:lge \
+    vendor/lge/hammerhead/vendor/firmware/discretix/dxhdcp2.b01:system/vendor/firmware/discretix/dxhdcp2.b01:lge \
+    vendor/lge/hammerhead/vendor/firmware/discretix/dxhdcp2.b02:system/vendor/firmware/discretix/dxhdcp2.b02:lge \
+    vendor/lge/hammerhead/vendor/firmware/discretix/dxhdcp2.b03:system/vendor/firmware/discretix/dxhdcp2.b03:lge \
+    vendor/lge/hammerhead/vendor/firmware/discretix/dxhdcp2.mdt:system/vendor/firmware/discretix/dxhdcp2.mdt:lge 

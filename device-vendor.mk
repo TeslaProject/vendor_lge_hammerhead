@@ -18,6 +18,11 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     TimeService \
     shutdownlistener
+    
+    # Prebuilt jars
+PRODUCT_PACKAGES += \
+    qcrilhook\
+    serviceitems
 
     
 $(call inherit-product, vendor/lge/hammerhead/device-partial.mk)
