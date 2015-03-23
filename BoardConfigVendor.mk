@@ -14,5 +14,4 @@
 
 LOCAL_STEM := hammerhead/BoardConfigPartial.mk
 
--include vendor/moto/$(LOCAL_STEM)
 

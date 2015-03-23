@@ -212,6 +212,7 @@
     #files in google props but not being pulled in
     PRODUCT_COPY_FILES += \
     vendor/lge/hammerhead/vendor/lib/libssd.so:system/vendor/lib/libssd.so:qcom \
+    vendor/lge/hammerhead/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so:qcom \
     vendor/lge/hammerhead/etc/qmi_fw.conf:system/etc/qmi_fw.conf:qcom 
     
     #Missing service items
@@ -231,3 +232,7 @@
     vendor/lge/hammerhead/vendor/firmware/discretix/dxhdcp2.b02:system/vendor/firmware/discretix/dxhdcp2.b02:lge \
     vendor/lge/hammerhead/vendor/firmware/discretix/dxhdcp2.b03:system/vendor/firmware/discretix/dxhdcp2.b03:lge \
     vendor/lge/hammerhead/vendor/firmware/discretix/dxhdcp2.mdt:system/vendor/firmware/discretix/dxhdcp2.mdt:lge 
+    
+    #missing
+    PRODUCT_COPY_FILES += \
+    vendor/lge/hammerhead/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so:qcom \
