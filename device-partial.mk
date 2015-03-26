@@ -235,4 +235,4 @@
     
     #missing
     PRODUCT_COPY_FILES += \
-    vendor/lge/hammerhead/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so:qcom \
+    vendor/lge/hammerhead/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so:qcom
